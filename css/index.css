@@ -1,0 +1,56 @@
+:root {
+  --dark-blue--100: #609ed4;
+  --dark-blue--200: #356ea9;
+  --dark-blue--300: #0a3871;
+  --dark-blue--400: #072b61;
+  --dark-blue--500: #052051;
+
+  --gray--100: #ced4da;
+  --gray--200: #adb5bd;
+  --gray--300: #868e96;
+  --gray--400: #495057;
+  --gray--500: #343a40;
+
+  --light-blue--100: #f3f5fc;
+  --light-blue--200: #eff1fa;
+  --light-blue--300: #e9ecf8;
+  --light-blue--400: #aab2d5;
+  --light-blue--500: #757fb2;
+
+  --root-white: #ffffff;
+  --root-red: #e62929;
+  --root-yellow: #ffd900;
+  --root-black: #000000;
+}
+
+html[data-theme='light'] {
+  --background-card-color: var(--root-white);
+  --background-btnCopy-color: var(--root-white);
+  --background-btn-color: var(--dark-blue--300);
+  --background-color: var(--light-blue--300);
+  --text-card-title-color: var(--gray--500);
+  --text-card-subtitle-color: var(--gray--400);
+  --text-warning-color: var(--gray--400);
+  --text-error-color: var(--root-red);
+  --textarea-color: var(--dark-blue--300);
+  --text-button-outline-color: var(--dark-blue--300);
+  --text-button-color: var(--root-white);
+  --text-color: #121416d8;
+  --border-button-color: var(--dark-blue--300);
+}
+
+html[data-theme='dark'] {
+  --background-card-color: var(--gray--500);
+  --background-btnCopy-color: var(--gray--500);
+  --background-btn-color: var(--gray--500);
+  --background-color: var(--root-black);
+  --text-warning-color:var(--root-white);
+  --text-error-color: var(--root-white);
+  --text-card-title-color: var(--root-white);
+  --text-card-subtitle-color: var(--root-white);
+  --textarea-color: var(--root-white);
+  --text-button-outline-color: var(--root-white);
+  --text-button-color: var(--root-white);
+  --text-color: var(--root-white);
+  --border-button-color: var(--root-yellow);
+}

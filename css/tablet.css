@@ -1,0 +1,48 @@
+@media screen and (min-width: 415px) and (max-width: 1280px) {
+  body {
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+  main {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  header {
+    flex-direction: row;
+    width: 100%;
+  }
+  .language__content {
+    flex-direction: row;
+    padding-left: 6px;
+  }
+  .language__content:hover {
+    flex-direction: row;
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    width: 150px;
+    height: 48px;
+  }
+  .language__content > ul {
+    flex-direction: row;
+  }
+  .card__content {
+    height: 180px;
+    width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
+  }
+  .card__content :first-child > img {
+    display: none;
+  }
+  #card__sucess {
+    width: 100%;
+    gap: 25px;
+    justify-content: center;
+    height: 110px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
