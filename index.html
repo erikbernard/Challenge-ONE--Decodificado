@@ -1,14 +1,194 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Decodificador</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen'href="./styles/index.css">
-    <script src='main.js'></script>
-</head>
-<body>
-    
-</body>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title id="title">Decodificador</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <svg
+          width="31"
+          height="49"
+          viewBox="0 0 31 49"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="2.04858" width="30.3497" height="46.9523" fill="#E9ECF800" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M22.9051 23.7291C22.8625 23.9968 22.7589 24.2516 22.602 24.4743C22.4451 24.6971 22.2389 24.8821 21.9989 25.0154C21.5157 25.3221 21.0928 25.4755 20.6649 25.6289C19.7537 25.9381 18.7947 26.2472 17.7804 26.6059C16.7106 26.9646 15.7516 27.3233 14.8958 27.583C13.8286 27.9417 12.8142 28.2509 11.8502 28.6095C11.1249 28.9145 10.4437 29.3121 9.82401 29.7919C9.2477 30.305 8.74475 30.8925 8.32888 31.5382C7.90099 32.2556 7.63166 33.1807 7.63166 34.2592C7.63166 36.4186 8.16528 38.0611 9.23502 39.0876C10.3022 40.1686 12.2806 40.6806 15.213 40.6806C18.2032 40.6806 20.232 40.1166 21.3042 38.9862C22.3689 37.8558 22.9025 36.2653 22.9025 34.2122V23.7291H22.9051ZM15.2155 0.972168C20.4509 0.972168 24.2945 1.94923 26.7486 3.95284C29.2052 5.90697 30.4335 8.42013 30.4335 11.3983V36.7773C30.4335 37.8038 30.2221 38.9343 29.8496 40.1661C29.472 41.4029 28.727 42.5309 27.5515 43.5549C26.4314 44.5864 24.8835 45.4596 22.9076 46.1274C20.9317 46.7953 18.3694 47.154 15.218 47.154C12.0717 47.154 9.50434 46.7953 7.53098 46.1274C5.55762 45.4596 4.00713 44.5864 2.88704 43.5549C1.84507 42.6321 1.05572 41.4669 0.591504 40.1661C0.213948 38.9367 0 37.8063 0 36.7798V32.7231C0 30.5637 0.58647 28.56 1.76193 26.8112C2.93739 25.0154 4.59108 23.7836 6.72805 23.0118C7.79527 22.6531 9.02359 22.2945 10.4105 21.8319C11.7999 21.3669 13.0785 20.9043 14.3622 20.4962C15.6459 20.0831 16.766 19.67 17.725 19.3088C18.3037 19.0813 18.8915 18.8766 19.4869 18.6954L20.4484 18.2328C20.826 18.0275 21.196 17.7183 21.571 17.3077C21.9436 16.8996 22.2632 16.437 22.5325 15.9225C22.8171 15.3654 22.9637 14.7501 22.9604 14.1267V12.4818C22.9644 11.8789 22.8356 11.2823 22.5829 10.7329C22.3714 10.1145 21.9436 9.55056 21.3571 9.03852C20.7706 8.52402 19.9677 8.11341 19.0087 7.80173C18.0472 7.49748 16.7685 7.34165 15.3237 7.34165C12.3335 7.34165 10.3576 7.91057 9.29039 9.088C8.38426 10.117 7.85065 11.4008 7.74493 12.838C7.74493 13.1471 7.47812 13.3525 7.15594 13.3525L0.644362 13.4563C0.489685 13.457 0.341003 13.3976 0.23069 13.291C0.120376 13.1845 0.057365 13.0394 0.0553749 12.8874V11.4033C0.0553749 9.96117 0.324698 8.62544 0.911168 7.34165C1.50016 6.05538 2.40881 4.97937 3.63461 4.05178C4.86292 3.12913 6.46627 2.35985 8.38678 1.84534C10.2569 1.22695 12.5525 0.972168 15.2205 0.972168H15.2155Z"
+            fill="#0A3871"
+          />
+        </svg>
+      </nav>
+      <div class="language__content">
+        <ul class="language__list">
+          <li data-value="portugues">
+            <input
+              id="portugues"
+              name="language"
+              hidden
+              type="radio"
+              value="portugues"
+              checked
+            />
+            <label class="language__item" for="portugues"> </label>
+          </li>
+          <li data-value="espanhol">
+            <input
+              id="espanhol"
+              name="language"
+              hidden
+              type="radio"
+              value="espanhol"
+            />
+            <label class="language__item" for="espanhol"> </label>
+          </li>
+          <li data-value="ingles">
+            <input
+             id="ingles" 
+             name="language" 
+             hidden 
+             type="radio" 
+             value="ingles" />
+            <label class="language__item" for="ingles"> </label>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section>
+        <form>
+          <textarea
+            name="text__encoded"
+            id="text__encoded"
+            cols="40"
+            rows="15"
+            placeholder="Digite seu texto"
+          ></textarea>
+
+          <label for="text__encoded" class="validation">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_18_134)">
+                <path
+                  d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM8 4C7.87361 4.00007 7.74863 4.02662 7.63312 4.07793C7.51761 4.12924 7.41413 4.20418 7.32934 4.29791C7.24456 4.39165 7.18035 4.5021 7.14084 4.62217C7.10134 4.74223 7.08743 4.86923 7.1 4.995L7.45 8.502C7.46176 8.63977 7.5248 8.76811 7.62664 8.86164C7.72849 8.95516 7.86173 9.00705 8 9.00705C8.13827 9.00705 8.27151 8.95516 8.37336 8.86164C8.4752 8.76811 8.53824 8.63977 8.55 8.502L8.9 4.995C8.91257 4.86923 8.89866 4.74223 8.85915 4.62217C8.81965 4.5021 8.75544 4.39165 8.67066 4.29791C8.58587 4.20418 8.48239 4.12924 8.36688 4.07793C8.25137 4.02662 8.12639 4.00007 8 4ZM8.002 10C7.73678 10 7.48243 10.1054 7.29489 10.2929C7.10736 10.4804 7.002 10.7348 7.002 11C7.002 11.2652 7.10736 11.5196 7.29489 11.7071C7.48243 11.8946 7.73678 12 8.002 12C8.26722 12 8.52157 11.8946 8.70911 11.7071C8.89664 11.5196 9.002 11.2652 9.002 11C9.002 10.7348 8.89664 10.4804 8.70911 10.2929C8.52157 10.1054 8.26722 10 8.002 10Z"
+                  fill="#343A40"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_18_134">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <small id="validation__warnning">
+              Apenas letras minúsculas e sem acento.
+            </small>
+            <small id="validation__error">
+              Por favor, digite uma mensagem para ser criptografada ou
+              descriptografada!
+            </small>
+          </label>
+
+          <div class="buttons__form">
+            <button type="submit" id="button__Encrypt">Criptografar</button>
+            <button type="submit" id="button__Decrypt">Descriptografar</button>
+          </div>
+        </form>
+      </section>
+      <section>
+        <div class="card__content">
+          <div id="card__text">
+            <img src="./assets/backgroundcard.svg" alt="" srcset="">
+            <h2 id="card__title">Nenhuma mensagem encontrada</h2>
+            <h3 id="card__subtitle">
+              Digite um texto que você deseja
+              <p>criptografar ou descriptografar.</p>
+            </h3>
+          </div>
+          <div id="card__copy">
+            <h4
+              name="text__decoded"
+              id="text__decoded"
+            ></h3>
+            <button id="button__Copy">Copiar</button>
+          </div>
+          <div id="card__sucess">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="56"
+              height="56"
+              fill="currentColor"
+              class="bi bi-clipboard-check"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+              />
+              <path
+                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+              />
+              <path
+                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+              />
+            </svg>
+            <h2 id="text__copy">
+              Texto copiado para sua área de transferência!
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <footer>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/lucas-ferreira-nogueira/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.svgporn.com/logos/linkedin-icon.svg"
+            alt="logo da rede social linkedin"
+          />
+        </a>
+        <a
+          href="https://github.com/RudeBoyOne"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.svgporn.com/logos/github-icon.svg"
+            alt="logo da rede social github"
+          />
+        </a>
+      </div>
+      <div>
+        &copy;
+        <small>Erik Bernardo da SIlva</small>
+      </div>
+    </footer> -->
+    <script src="js/main.js" type="module" defer></script>
+  </body>
 </html>
