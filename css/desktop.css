@@ -236,3 +236,22 @@ label[for='portugues'] {
   border: solid 2px var(--dark-blue--300);
   border-radius: 24px;
 }
+.font__content > ul > li {
+  list-style: none;
+  border-radius: 50px;
+  border: 2px solid var(--icon-button-color);
+  padding: 0px;
+  margin: 5px;
+  transition: all;
+}
+.font__content > ul > li:hover {
+  filter: drop-shadow(-3px 1px 8px var(--icon-button-color));
+}
+.font__content > ul > li > svg {
+  width: 30px;
+}
+.font__content > ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}

@@ -36,6 +36,7 @@ html[data-theme='light'] {
   --text-button-outline-color: var(--dark-blue--300);
   --text-button-color: var(--root-white);
   --text-color: #121416d8;
+  --icon-button-color: var(--dark-blue--300);
   --border-button-color: var(--dark-blue--300);
 }
 
@@ -52,5 +53,6 @@ html[data-theme='dark'] {
   --text-button-outline-color: var(--root-white);
   --text-button-color: var(--root-white);
   --text-color: var(--root-white);
+  --icon-button-color: var(--root-yellow);
   --border-button-color: var(--root-yellow);
 }
