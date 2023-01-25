@@ -131,7 +131,7 @@ button {
   text-align: center;
   line-height: 25px;
   font-size: 1.5em;
-  color: var(--text-card-color);
+  color: var(--text-card-title-color);
   padding-top: 1rem;
 }
 .card__content > div > h3 {
