@@ -2,8 +2,8 @@ export const saveTheme = () => {
   const storedTheme =
     localStorage.getItem('theme') ||
     (window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light');
+      ? 'light'
+      : 'dark');
   if (storedTheme)
     document.documentElement.setAttribute('data-theme', storedTheme);
 }
