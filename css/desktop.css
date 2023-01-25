@@ -15,11 +15,10 @@ header {
 
 main {
   display: flex;
-  /* gap: 30px; */
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
 }
 
 section {
@@ -27,14 +26,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 
 form {
   width: -webkit-fill-available;
   gap: 20px;
-  /* height: 85%;
-  width: 98%; */
 }
 
 textarea {
@@ -45,7 +42,7 @@ textarea {
   outline: none;
   color: var(--textarea-color);
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 2em;
   border-radius: 24px;
   background-color: transparent;
 }
@@ -53,7 +50,7 @@ textarea::placeholder {
   color: var(--textarea-color);
 }
 textarea:focus {
-  border: 2px solid #0a3871;
+  border: 2px solid var(--border-textarea-color);
 }
 .validation {
   display: flex;
@@ -63,12 +60,12 @@ textarea:focus {
 }
 
 #validation__warnning {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   color: var(--text-warning-color);
 }
 
 #validation__error {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   color: var(--text-error-color);
   display: none;
 }
@@ -84,6 +81,7 @@ button {
   border-radius: 24px;
   border: 2px solid var(--border-button-color);
   cursor: pointer;
+  font-size: 1.6em; 
 }
 
 #button__Encrypt {
@@ -123,7 +121,7 @@ button {
 }
 
 .card__content > div > h2 {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: 700;
   text-align: center;
   color: var(--text-card-title-color);
@@ -132,8 +130,8 @@ button {
   font-weight: 400;
   text-align: center;
   line-height: 25px;
-  font-size: 1.5rem;
-  color: var(--text-card-color);
+  font-size: 1.5em;
+  color: var(--text-card-title-color);
   padding-top: 1rem;
 }
 .card__content > div > h3 {
@@ -233,6 +231,37 @@ label[for='portugues'] {
   padding: 1rem;
 }
 .language__list > li input[type='radio']:checked + label {
-  border: solid 2px var(--dark-blue--300);
+  border: solid 2px var(--border-button-color);
   border-radius: 24px;
+}
+.font__content > ul > li {
+  list-style: none;
+  border-radius: 50px;
+  border: 2px solid var(--icon-button-color);
+  padding: 0px;
+  margin: 5px;
+  width: 38px;
+  transition: all;
+}
+.font__content > ul > li:hover {
+  filter: drop-shadow(-3px 1px 8px var(--icon-button-color));
+}
+.font__content > ul > li > svg {
+  width: 30px;
+}
+.font__content > ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.theme_content  {
+  border-radius: 50px;
+  border: 2px solid var(--icon-button-color);
+  padding: 0px;
+  margin: 5px;
+  display: flex;
+  margin-top: 15px;
+}
+.theme_content > svg {
+  width: 36px;
 }

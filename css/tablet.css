@@ -42,6 +42,12 @@
     justify-content: center;
     height: 110px;
   }
+  .font__content > ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  
   .footer {
     flex-direction: column;
   }

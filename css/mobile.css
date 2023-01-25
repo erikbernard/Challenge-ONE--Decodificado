@@ -11,6 +11,7 @@
   header {
     flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;
   }
   .language__content {
     flex-direction: row;
@@ -50,5 +51,10 @@
   }
   .footer {
     flex-direction: column;
+  }
+  .font__content > ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
   }
 }

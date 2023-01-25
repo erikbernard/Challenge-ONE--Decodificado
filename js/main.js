@@ -1,8 +1,14 @@
 import { encrypt, decrypt } from './encrypt.js';
 import { copyText } from './copyText.js';
 import { translate, selectLanguage } from './translate.js';
+import { saveTheme, changeTheme } from './theme.js';
+import { fontReset, fontDecrease, fontIncrease } from './font.js';
 
+const theme = document.getElementsByClassName('theme_content')[0];
 const form = document.querySelector('form');
+const fontIncreaseButton = document.getElementById('font__increase');
+const fontResetButton = document.getElementById('font__reset');
+const fontDecreaseButton = document.getElementById('font__decrease');
 const buttonEncrypt = document.getElementById('button__Encrypt');
 const buttonDecrypt = document.getElementById('button__Decrypt');
 const textToEncodeOrToDecode = document.getElementById('text__encoded');
@@ -19,9 +25,11 @@ const titleMessage = document.getElementById('card__title');
 const textCopy = document.getElementById('text__copy');
 const languageList = document.getElementsByClassName('language__list')[0];
 const list = languageList.getElementsByTagName('li');
+
+saveTheme();
 !textEncodedOrDecoded.value
-  ? (sectionTextEncodedOrDecoded.style.display = 'none')
-  : null;
+? (sectionTextEncodedOrDecoded.style.display = 'none')
+: null;
 
 buttonEncrypt.addEventListener('click', (e) => {
   e.preventDefault();
@@ -135,4 +143,18 @@ document.getElementById('espanhol').addEventListener('click', function () {
     titleMessage,
     textCopy,
   });
+});
+
+theme.addEventListener('click', () => {
+  changeTheme();
+});
+
+fontIncreaseButton.addEventListener('click', () => {
+  fontIncrease();
+});
+fontResetButton.addEventListener('click', () => {
+  fontReset();
+});
+fontDecreaseButton.addEventListener('click', () => {
+  fontDecrease();
 });
