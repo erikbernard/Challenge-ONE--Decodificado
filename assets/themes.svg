@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="Camada_1" data-name="Camada 1" viewBox="0 0 30 30" rel="stylesheet" href="../css/index.css" type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" id="Camada_1" data-name="Camada 1" viewBox="0 0 30 30"
+    rel="stylesheet" href="../css/index.css" type="text/css">
     <title>icones</title>
     <path id="Caminho_11" data-name="Caminho 11" fill="var(--border-button-color);"
         d="M18.82,11.18A5.41,5.41,0,0,0,15,9.6V20.37a5.53,5.53,0,0,0,3.83-1.55,5.4,5.4,0,0,0,0-7.63ZM15,6a9,9,0,1,0,9,9A9,9,0,0,0,15,6Zm0,16.2A7.2,7.2,0,1,1,22.2,15,7.2,7.2,0,0,1,15,22.2Z" />
