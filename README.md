@@ -1,3 +1,17 @@
+<h1 align="center">
+    <strong>Challenge ONE Decodificador</strong>
+</h1>
+
+<p align="center">
+    <apan align="center">
+      <img alt="Happy" src="./assets/home.gif" height="80%" width="64%">
+    </apan>
+        <span align="center">
+      <img alt="Happy" src="./assets/mobile.gif" height="10%" width="20%">
+    </span>
+</p>
+
+
 ## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -11,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-$ git clone https://github.dev/erikbernard/Challenge-ONE--Decodificado
+$ git clone https://github/erikbernard/Challenge-ONE--Decodificado
 $ cd Challenge-ONE--Decodificado
 ```
 
@@ -24,7 +38,23 @@ Para iniciá-lo, siga os passos abaixo:
 
 ## 💻 Projeto
 
-...
+Projeto dessevolvido durante o programa ONE basicamente é construir um decodificador de texto com Javascript seguindo as seguintes intruções para criar as "chaves" de criptografia que usado no projeto são:
+- A letra "e" é convertida para "enter"
+- A letra "i" é convertida para "imes"
+- A letra "a" é convertida para "ai"
+- A letra "o" é convertida para "ober"
+- A letra "u" é convertida para "ufat"
+
+Requisitos:
+- Deve funcionar apenas com letras minúsculas
+- Não devem ser utilizados letras com acentos nem caracteres especiais
+- Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
+
+Por exemplo:
+```
+"gato" => "gaitober"
+gaitober" => "gato"
+```
 
 Este é um projeto desenvolvido durante o **Programa ONE - Oracle Next Education**.
 
